@@ -1,12 +1,101 @@
-CMakeLists.txt.user
+# Build and output directories
+/build/
+/out/
+/bin/
+/lib/
+/x64/
+/Debug/
+/Release/
+/.vs/
+
+# CMake generated files
 CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
+CMakeFiles/
+CMakeScripts/
+Testing/
 Makefile
 cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
-_deps
+_deps/
 CMakeUserPresets.json
+
+# Visual Studio files
+*.sln
+*.suo
+*.user
+*.userosscache
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+ipch/
+
+# Allow specific build files
+!CPProject.vcxproj
+!CPProject.vcxproj.filters
+
+# SQLite database files
+*.db
+*.db-shm
+*.db-wal
+
+# Ninja build files
+.ninja_deps
+.ninja_log
+build.ninja
+
+# Compiled Object files, Static and Dynamic libs
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+
+# Debug files
+*.ilk
+*.pdb
+*.idb
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Credential files (security)
+credentials.json
+
+# Log files
+*.log
+
+# OS specific files
+## Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+## macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+## Linux
+*~
+.directory
+
+# IDE specific files (except essential project files)
+## Visual Studio Code
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/c_cpp_properties.json
+
+# Allow important project files
+!CMakeLists.txt
+!README.md
+!LICENSE
